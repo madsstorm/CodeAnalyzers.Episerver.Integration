@@ -8,3 +8,5 @@ configuration: Release
 
 build:
   project: CodeAnalyzers.Episerver.Integration.sln
+
+before_build: nuget restore
