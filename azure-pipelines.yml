@@ -1,0 +1,16 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- task: VSBuild@1
+  displayName: 'Integration'
+  inputs:
+    solution: 'CodeAnalyzers.Episerver.Integration.sln'
+    configuration: $(buildConfiguration)
+    clean: true
