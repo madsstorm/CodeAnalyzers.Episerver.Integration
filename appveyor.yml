@@ -1,0 +1,10 @@
+branches:
+  only:
+    - master
+
+image: Visual Studio 2019
+
+configuration: Release
+
+build:
+  project: CodeAnalyzers.Episerver.Integration.sln
