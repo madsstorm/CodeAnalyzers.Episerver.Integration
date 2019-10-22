@@ -1,4 +1,5 @@
 ﻿using EPiServer.Commerce.Catalog.ContentTypes;
+using EPiServer.Commerce.Catalog.DataAnnotations;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
@@ -6,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CodeAnalyzers.Episerver.Integration.Models.Variations
 {
-    [ContentType(DisplayName = "DefaultVariation", GUID = "f6b2ee6e-38a5-47fa-8d50-156dbb4c4f89", Description = "")]
+    [CatalogContentType(DisplayName = "DefaultVariation", GUID = "f6b2ee6e-38a5-47fa-8d50-156dbb4c4f89", Description = "")]
     public class DefaultVariation : VariationContent
     {
         [CultureSpecific]
