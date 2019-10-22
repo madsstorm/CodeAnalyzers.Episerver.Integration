@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# Epi3001: Avoid using EPiServer.CacheManager
+dotnet_diagnostic.Epi3001.severity = error
