@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using CodeAnalyzers.Episerver.Integration.Business;
 using EPiServer.Commerce.Catalog.ContentTypes;
 using EPiServer.Commerce.Catalog.DataAnnotations;
 using EPiServer.Core;
@@ -8,6 +9,7 @@ using EPiServer.DataAnnotations;
 namespace CodeAnalyzers.Episerver.Integration.Models.Nodes
 {
     [CatalogContentType(DisplayName = "DefaultNode", GUID = "c9d15fd2-f0b3-4b2f-b743-b6159d12b189", Description = "")]
+    [SiteImageUrl]
     public class DefaultNode : NodeContent
     {
         [CultureSpecific]

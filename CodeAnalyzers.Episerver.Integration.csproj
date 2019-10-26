@@ -320,6 +320,8 @@
     <Compile Include="Business\Property\CustomProperty.cs" />
     <Compile Include="Business\Property\CustomPropertyControl.cs" />
     <Compile Include="Business\ScheduledJob.cs" />
+    <Compile Include="Business\SiteContentTypeAttribute.cs" />
+    <Compile Include="Business\SiteImageUrlAttribute.cs" />
     <Compile Include="Controllers\DefaultBlockController.cs" />
     <Compile Include="Controllers\DefaultPageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -334,6 +336,7 @@
     <Compile Include="Models\Media\DefaultMedia.cs" />
     <Compile Include="Models\Media\DefaultVideo.cs" />
     <Compile Include="Models\Nodes\DefaultNode.cs" />
+    <Compile Include="Models\Nodes\ElectronicsNode.cs" />
     <Compile Include="Models\Packages\DefaultPackage.cs" />
     <Compile Include="Models\Pages\ArticlePage.cs" />
     <Compile Include="Models\Pages\DefaultPage.cs" />
@@ -355,13 +358,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\Properties\" />
-    <Folder Include="Static\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Business\Criterion\DefaultCriterion.js" />
     <Content Include="Business\Criterion\Views\Shared\EditorTemplates\DefaultCriterionModel.ascx" />
     <Content Include="Plugins\AdminPlugin.aspx" />
+    <Content Include="Static\gfx\page-type-thumbnail.png" />
     <Content Include="Views\Web.config" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />

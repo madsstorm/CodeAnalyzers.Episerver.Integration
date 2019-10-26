@@ -1,17 +1,16 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using CodeAnalyzers.Episerver.Integration.Business;
+using EPiServer.Commerce.Catalog.ContentTypes;
+using EPiServer.Commerce.Catalog.DataAnnotations;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 
-namespace CodeAnalyzers.Episerver.Integration.Models.Pages
+namespace CodeAnalyzers.Episerver.Integration.Models.Nodes
 {
-    [SiteContentType(DisplayName = "StartPage",
-        GUID = "f36e94f4-2f49-45f6-825d-86e9ec3acb74",
-        Description = "Start page",
-        Order = 100)]
+    [CatalogContentType(DisplayName = "ElectronicsNode", GUID = "76721ca4-9699-4912-85c2-16fb95cb202f", Description = "")]
     [SiteImageUrl]
-    public class StartPage : PageData
+    public class ElectronicsNode : NodeContent
     {
         [CultureSpecific]
         [Display(
