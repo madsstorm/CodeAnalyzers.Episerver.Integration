@@ -7,7 +7,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CodeAnalyzers.Episerver.Integration.Models.Variations
 {
-    [CatalogContentType(DisplayName = "DefaultVariation", GUID = "f6b2ee6e-38a5-47fa-8d50-156dbb4c4f89", Description = "")]
+    [CatalogContentType(DisplayName = "DefaultVariation",
+        GUID = "f6b2ee6e-38a5-47fa-8d50-156dbb4c4f89",
+        Description = "Default variation",
+        Order = 400,
+        GroupName = "DefaultGroup")]
+    [ImageUrl("image.png")]
     public class DefaultVariation : VariationContent
     {
         [CultureSpecific]

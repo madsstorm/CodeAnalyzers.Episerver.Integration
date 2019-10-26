@@ -7,9 +7,10 @@ namespace CodeAnalyzers.Episerver.Integration.Models.Blocks
 {
     [ContentType(DisplayName = "StandardBlock",
         GUID = "e394d7a8-2090-4490-a15c-09c9b1bf81d4",
-        Description = "",
+        Description = "Standard block",
         GroupName = "Structure",
         Order = 100)]
+    [ImageUrl("image.png")]
     public class StandardBlock : BlockData
     {
         [CultureSpecific]

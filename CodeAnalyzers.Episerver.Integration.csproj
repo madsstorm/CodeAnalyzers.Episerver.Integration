@@ -343,6 +343,7 @@
     <Compile Include="Models\Promotions\DefaultOrderPromotion.cs" />
     <Compile Include="Models\Promotions\DefaultShippingPromotion.cs" />
     <Compile Include="Models\Variations\DefaultVariation.cs" />
+    <Compile Include="Models\Variations\ElectronicsVariation.cs" />
     <Compile Include="Plugins\AdminPlugin.aspx.cs">
       <DependentUpon>AdminPlugin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -7,9 +7,10 @@ namespace CodeAnalyzers.Episerver.Integration.Models.Pages
 {
     [ContentType(DisplayName = "StartPage",
         GUID = "f36e94f4-2f49-45f6-825d-86e9ec3acb74",
-        Description = "",
+        Description = "Start page",
         GroupName = "Structure",
         Order = 100)]
+    [ImageUrl("image.png")]
     public class StartPage : PageData
     {
         [CultureSpecific]

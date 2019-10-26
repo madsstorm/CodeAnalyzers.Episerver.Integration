@@ -1,17 +1,19 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using EPiServer.Commerce.Catalog.ContentTypes;
+using EPiServer.Commerce.Catalog.DataAnnotations;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 
-namespace CodeAnalyzers.Episerver.Integration.Models.Pages
+namespace CodeAnalyzers.Episerver.Integration.Models.Variations
 {
-    [ContentType(DisplayName = "DefaultPage",
-        GUID = "890ee4e2-a723-4119-90ec-198616a733d4",
-        Description = "Default page",
-        GroupName = "Content",
-        Order = 300)]
+    [CatalogContentType(DisplayName = "Electronics Variation",
+        GUID = "{9F54164B-2D36-4F9F-B079-FDAB3FB2CBD8}",
+        Description = "Electronics variation",
+        Order = 400,
+        GroupName = "DefaultGroup")]
     [ImageUrl("image.png")]
-    public class DefaultPage : PageData
+    public class ElectronicsVariation : VariationContent
     {
         [CultureSpecific]
         [Display(
