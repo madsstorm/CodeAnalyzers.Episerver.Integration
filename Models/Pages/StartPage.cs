@@ -5,12 +5,12 @@ using EPiServer.DataAnnotations;
 
 namespace CodeAnalyzers.Episerver.Integration.Models.Pages
 {
-    [ContentType(DisplayName = "DefaultPage",
-        GUID = "890ee4e2-a723-4119-90ec-198616a733d4",
+    [ContentType(DisplayName = "StartPage",
+        GUID = "f36e94f4-2f49-45f6-825d-86e9ec3acb74",
         Description = "",
-        GroupName = "Content",
-        Order = 300)]
-    public class DefaultPage : PageData
+        GroupName = "Structure",
+        Order = 100)]
+    public class StartPage : PageData
     {
         [CultureSpecific]
         [Display(

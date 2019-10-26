@@ -5,12 +5,12 @@ using EPiServer.DataAnnotations;
 
 namespace CodeAnalyzers.Episerver.Integration.Models.Blocks
 {
-    [ContentType(DisplayName = "DefaultBlock",
-        GUID = "8baf5f3b-d09b-426a-9200-8806c8c51dbd",
+    [ContentType(DisplayName = "StandardBlock",
+        GUID = "e394d7a8-2090-4490-a15c-09c9b1bf81d4",
         Description = "",
-        GroupName = "Content",
-        Order = 1000)]
-    public class DefaultBlock : BlockData
+        GroupName = "Structure",
+        Order = 100)]
+    public class StandardBlock : BlockData
     {
         [CultureSpecific]
         [Display(

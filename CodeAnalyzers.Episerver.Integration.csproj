@@ -327,6 +327,7 @@
     </Compile>
     <Compile Include="Infrastructure\EPiServerCommerceInitializationModule.cs" />
     <Compile Include="Models\Blocks\DefaultBlock.cs" />
+    <Compile Include="Models\Blocks\StandardBlock.cs" />
     <Compile Include="Models\Bundles\DefaultBundle.cs" />
     <Compile Include="Models\Campaigns\DefaultSalesCampaign.cs" />
     <Compile Include="Models\Media\DefaultImage.cs" />
@@ -334,7 +335,9 @@
     <Compile Include="Models\Media\DefaultVideo.cs" />
     <Compile Include="Models\Nodes\DefaultNode.cs" />
     <Compile Include="Models\Packages\DefaultPackage.cs" />
+    <Compile Include="Models\Pages\ArticlePage.cs" />
     <Compile Include="Models\Pages\DefaultPage.cs" />
+    <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Models\Products\DefaultProduct.cs" />
     <Compile Include="Models\Promotions\DefaultEntryPromotion.cs" />
     <Compile Include="Models\Promotions\DefaultOrderPromotion.cs" />
