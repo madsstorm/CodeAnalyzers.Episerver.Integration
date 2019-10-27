@@ -1,16 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using CodeAnalyzers.Episerver.Integration.Business;
-using EPiServer.Commerce.Catalog.ContentTypes;
-using EPiServer.Commerce.Catalog.DataAnnotations;
+using EPiServer.Commerce.Marketing;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 
-namespace CodeAnalyzers.Episerver.Integration.Models.Nodes
+namespace CodeAnalyzers.Episerver.Integration.Models.Marketing
 {
-    [CatalogContentType(DisplayName = "DefaultNode", GUID = "c9d15fd2-f0b3-4b2f-b743-b6159d12b189", Description = "")]
-    [SiteImageUrl]
-    public class DefaultNode : NodeContent
+    [ContentType(DisplayName = "DefaultSalesCampaign", GUID = "933a0984-5361-41a2-bafa-dc8b809e63ba", Description = "")]
+    public class DefaultSalesCampaign : SalesCampaign
     {
         [CultureSpecific]
         [Display(

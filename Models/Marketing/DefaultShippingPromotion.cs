@@ -3,7 +3,7 @@ using EPiServer.Commerce.Marketing;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 
-namespace CodeAnalyzers.Episerver.Integration.Models.Promotions
+namespace CodeAnalyzers.Episerver.Integration.Models.Marketing
 {
     [ContentType(DisplayName = "DefaultShippingPromotion", GUID = "48cc781a-9929-4e5b-af56-ff5990b56b30", Description = "")]
     public class DefaultShippingPromotion : ShippingPromotion

@@ -1,14 +1,13 @@
-﻿using EPiServer.Commerce.Catalog.ContentTypes;
-using EPiServer.Commerce.Catalog.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using EPiServer.Commerce.Marketing;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
-using System.ComponentModel.DataAnnotations;
 
-namespace CodeAnalyzers.Episerver.Integration.Models.Products
+namespace CodeAnalyzers.Episerver.Integration.Models.Marketing
 {
-    [CatalogContentType(DisplayName = "DefaultProduct", GUID = "11af6ae2-1981-48f9-9c30-9bfb009d369f", Description = "")]
-    public class DefaultProduct : ProductContent
+    [ContentType(DisplayName = "DefaultEntryPromotion", GUID = "5d4a2b1f-3e82-473b-abf1-29159576326e", Description = "")]
+    public class DefaultEntryPromotion : EntryPromotion
     {
         [CultureSpecific]
         [Display(

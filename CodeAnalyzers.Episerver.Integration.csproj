@@ -330,23 +330,23 @@
     <Compile Include="Infrastructure\EPiServerCommerceInitializationModule.cs" />
     <Compile Include="Models\Blocks\DefaultBlock.cs" />
     <Compile Include="Models\Blocks\StandardBlock.cs" />
-    <Compile Include="Models\Bundles\DefaultBundle.cs" />
-    <Compile Include="Models\Campaigns\DefaultSalesCampaign.cs" />
+    <Compile Include="Models\CatalogContent\DefaultBundle.cs" />
+    <Compile Include="Models\Marketing\DefaultSalesCampaign.cs" />
     <Compile Include="Models\Media\DefaultImage.cs" />
     <Compile Include="Models\Media\DefaultMedia.cs" />
     <Compile Include="Models\Media\DefaultVideo.cs" />
-    <Compile Include="Models\Nodes\DefaultNode.cs" />
-    <Compile Include="Models\Nodes\ElectronicsNode.cs" />
-    <Compile Include="Models\Packages\DefaultPackage.cs" />
+    <Compile Include="Models\CatalogContent\DefaultNode.cs" />
+    <Compile Include="Models\CatalogContent\ElectronicsNode.cs" />
+    <Compile Include="Models\CatalogContent\DefaultPackage.cs" />
     <Compile Include="Models\Pages\ArticlePage.cs" />
     <Compile Include="Models\Pages\DefaultPage.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
-    <Compile Include="Models\Products\DefaultProduct.cs" />
-    <Compile Include="Models\Promotions\DefaultEntryPromotion.cs" />
-    <Compile Include="Models\Promotions\DefaultOrderPromotion.cs" />
-    <Compile Include="Models\Promotions\DefaultShippingPromotion.cs" />
-    <Compile Include="Models\Variations\DefaultVariation.cs" />
-    <Compile Include="Models\Variations\ElectronicsVariation.cs" />
+    <Compile Include="Models\CatalogContent\DefaultProduct.cs" />
+    <Compile Include="Models\Marketing\DefaultEntryPromotion.cs" />
+    <Compile Include="Models\Marketing\DefaultOrderPromotion.cs" />
+    <Compile Include="Models\Marketing\DefaultShippingPromotion.cs" />
+    <Compile Include="Models\CatalogContent\DefaultVariation.cs" />
+    <Compile Include="Models\CatalogContent\ElectronicsVariation.cs" />
     <Compile Include="Plugins\AdminPlugin.aspx.cs">
       <DependentUpon>AdminPlugin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

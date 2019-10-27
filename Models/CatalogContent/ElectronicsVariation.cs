@@ -1,13 +1,19 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using EPiServer.Commerce.Marketing;
+using EPiServer.Commerce.Catalog.ContentTypes;
+using EPiServer.Commerce.Catalog.DataAnnotations;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 
-namespace CodeAnalyzers.Episerver.Integration.Models.Promotions
+namespace CodeAnalyzers.Episerver.Integration.Models.CatalogContent
 {
-    [ContentType(DisplayName = "DefaultOrderPromotion", GUID = "e8f80064-f4bf-4398-acde-ae6ec9d88c7c", Description = "")]
-    public class DefaultOrderPromotion : OrderPromotion
+    [CatalogContentType(DisplayName = "Electronics Variation",
+        GUID = "{9F54164B-2D36-4F9F-B079-FDAB3FB2CBD8}",
+        Description = "Electronics variation",
+        Order = 400,
+        GroupName = "DefaultGroup")]
+    [ImageUrl("image.png")]
+    public class ElectronicsVariation : VariationContent
     {
         [CultureSpecific]
         [Display(

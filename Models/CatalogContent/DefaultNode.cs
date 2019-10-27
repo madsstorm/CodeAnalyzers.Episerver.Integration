@@ -1,14 +1,16 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using CodeAnalyzers.Episerver.Integration.Business;
 using EPiServer.Commerce.Catalog.ContentTypes;
 using EPiServer.Commerce.Catalog.DataAnnotations;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 
-namespace CodeAnalyzers.Episerver.Integration.Models.Bundles
+namespace CodeAnalyzers.Episerver.Integration.Models.CatalogContent
 {
-    [CatalogContentType(DisplayName = "DefaultBundle", GUID = "24cd52b5-0e9d-43f5-8e75-278d0be242f5", Description = "")]
-    public class DefaultBundle : BundleContent
+    [CatalogContentType(DisplayName = "DefaultNode", GUID = "c9d15fd2-f0b3-4b2f-b743-b6159d12b189", Description = "")]
+    [SiteImageUrl]
+    public class DefaultNode : NodeContent
     {
         [CultureSpecific]
         [Display(
