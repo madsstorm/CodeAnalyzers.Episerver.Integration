@@ -1,8 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using CodeAnalyzers.Episerver.Integration.Business;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
+using EPiServer.Shell.ObjectEditing;
 using EPiServer.Web;
 
 namespace CodeAnalyzers.Episerver.Integration.Models.Pages
@@ -32,5 +34,35 @@ namespace CodeAnalyzers.Episerver.Integration.Models.Pages
             Order = 10,
             Prompt = "Prompt")]
         public virtual XhtmlString MainBody { get; set; }
+
+        [CultureSpecific]
+        [Display(
+            Name = "Main area",
+            Description = "The main area",
+            GroupName = SystemTabNames.Content,
+            Order = 20,
+            Prompt = "area prompt")]
+        public virtual ContentArea MainArea { get; set; }
+
+
+        [SelectOne(SelectionFactoryType = typeof(DayOfWeekSelectionFactory))]
+        [CultureSpecific]
+        [Display(
+           Name = "Day of week",
+            Description = "Day of week",
+            GroupName = "Planning",
+            Order = 30,
+            Prompt = "day of week prompt")]
+        public virtual string DayOfWeek { get; set; }
+
+
+        [CultureSpecific]
+        [Display(
+           Name = "start time",
+            Description = "the start time description",
+            GroupName = "Planning",
+            Order = 40,
+            Prompt = "start time prompt")]
+        public virtual DateTime StartTime { get; set; }
     }
 }

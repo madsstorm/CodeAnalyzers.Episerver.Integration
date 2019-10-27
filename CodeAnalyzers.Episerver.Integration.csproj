@@ -322,6 +322,7 @@
     <Compile Include="Business\ScheduledJob.cs" />
     <Compile Include="Business\SiteContentTypeAttribute.cs" />
     <Compile Include="Business\SiteImageUrlAttribute.cs" />
+    <Compile Include="Business\DayOfWeekSelectionFactory.cs" />
     <Compile Include="Controllers\DefaultBlockController.cs" />
     <Compile Include="Controllers\DefaultPageController.cs" />
     <Compile Include="Global.asax.cs">
