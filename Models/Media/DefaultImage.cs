@@ -6,7 +6,7 @@ using EPiServer.Framework.DataAnnotations;
 
 namespace CodeAnalyzers.Episerver.Integration.Models.Media
 {
-    [ContentType(DisplayName = "DefaultImage", GUID = "c91438b4-0cd9-4514-921c-655a426a4a26", Description = "")]
+    [ContentType(DisplayName = "Default - Image", GUID = "c91438b4-0cd9-4514-921c-655a426a4a26", Description = "Image description", GroupName = "Images")]
     [MediaDescriptor(ExtensionString = "png,jpg,jpeg")]
     public class DefaultImage : ImageData
     {

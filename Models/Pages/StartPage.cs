@@ -15,7 +15,7 @@ namespace CodeAnalyzers.Episerver.Integration.Models.Pages
         Description = "Start page",
         Order = 100)]
     [ThumbnailIcon(FontAwesome5Brands.Github)]
-    public class StartPage : PageData
+    public class StartPage : PageBase
     {     
         [Display(
             Name = "Intro name",

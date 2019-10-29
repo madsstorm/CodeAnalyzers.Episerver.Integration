@@ -344,6 +344,7 @@
     <Compile Include="Models\CatalogContent\DefaultPackage.cs" />
     <Compile Include="Models\Pages\ArticlePage.cs" />
     <Compile Include="Models\Pages\DefaultPage.cs" />
+    <Compile Include="Models\Pages\PageBase.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Models\CatalogContent\DefaultProduct.cs" />
     <Compile Include="Models\Marketing\DefaultEntryPromotion.cs" />
