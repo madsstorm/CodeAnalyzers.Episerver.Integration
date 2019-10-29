@@ -6,6 +6,7 @@ using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 using EPiServer.Shell.ObjectEditing;
 using EPiServer.Web;
+using Geta.Epi.FontThumbnail;
 
 namespace CodeAnalyzers.Episerver.Integration.Models.Pages
 {
@@ -13,9 +14,9 @@ namespace CodeAnalyzers.Episerver.Integration.Models.Pages
         GUID = "f36e94f4-2f49-45f6-825d-86e9ec3acb74",
         Description = "Start page",
         Order = 100)]
-    [SiteImageUrl]
+    [ThumbnailIcon(FontAwesome5Brands.Github)]
     public class StartPage : PageData
-    {
+    {     
         [Display(
             Name = "Intro name",
             Description = "Intro description",
