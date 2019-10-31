@@ -7,7 +7,7 @@ using EPiServer.DataAnnotations;
 
 namespace CodeAnalyzers.Episerver.Integration.Models.CatalogContent
 {
-    [CatalogContentType(DisplayName = "DefaultBundle", GUID = "24cd52b5-0e9d-43f5-8e75-278d0be242f5", Description = "")]
+    [CatalogContentType(DisplayName = "DefaultBundle", GUID = "24cd52b5-0e9d-43f5-8e75-278d0be242f5", Description = "Default bundle")]
     public class DefaultBundle : BundleContent
     {
         [CultureSpecific]

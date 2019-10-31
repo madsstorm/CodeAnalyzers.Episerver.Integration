@@ -8,7 +8,7 @@ using EPiServer.DataAnnotations;
 
 namespace CodeAnalyzers.Episerver.Integration.Models.CatalogContent
 {
-    [CatalogContentType(DisplayName = "DefaultNode", GUID = "c9d15fd2-f0b3-4b2f-b743-b6159d12b189", Description = "")]
+    [CatalogContentType(DisplayName = "DefaultNode", GUID = "c9d15fd2-f0b3-4b2f-b743-b6159d12b189", Description = "Default node", GroupName = "")]
     [SiteImageUrl]
     public class DefaultNode : NodeContent
     {
