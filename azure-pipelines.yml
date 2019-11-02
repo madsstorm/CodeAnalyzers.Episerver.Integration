@@ -12,8 +12,7 @@ steps:
   inputs:
     command: 'restore'
     restoreSolution: '**/*.sln'
-    feedsToUse: 'select'
-    vstsFeed: 'ba46c181-ee0e-464a-865f-8801bd1018f4'
+    feedsToUse: 'config'
 - task: VSBuild@1
   displayName: 'Integration'
   inputs:
