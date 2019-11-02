@@ -8,6 +8,12 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    restoreSolution: '**/*.sln'
+    feedsToUse: 'select'
+    vstsFeed: 'ba46c181-ee0e-464a-865f-8801bd1018f4'
 - task: VSBuild@1
   displayName: 'Integration'
   inputs:
