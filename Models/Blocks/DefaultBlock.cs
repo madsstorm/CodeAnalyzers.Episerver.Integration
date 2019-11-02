@@ -6,7 +6,7 @@ using EPiServer.DataAnnotations;
 namespace CodeAnalyzers.Episerver.Integration.Models.Blocks
 {
     [ContentType(DisplayName = "DefaultBlock",
-        GUID = "8baf5f3b-d09b-426a-9200-8806c8c51dbd",
+        //GUID = "8baf5f3b-d09b-426a-9200-8806c8c51dbd",
         Description = "Default block",
         GroupName = "Content",
         Order = 1000)]
