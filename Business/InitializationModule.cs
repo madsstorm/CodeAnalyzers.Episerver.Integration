@@ -1,6 +1,7 @@
 ﻿using EPiServer.Core;
 using EPiServer.Framework;
 using EPiServer.Framework.Initialization;
+using Mediachase.Commerce.Orders;
 
 namespace CodeAnalyzers.Episerver.Integration.Business
 {
@@ -21,6 +22,13 @@ namespace CodeAnalyzers.Episerver.Integration.Business
 
         private void ContentEvents_SavingContent(object sender, EPiServer.ContentEventArgs e)
         {
+            OrderContext.Current.OrderGroupUpdated += Current_OrderGroupUpdated;
+        }
+
+        private void Current_OrderGroupUpdated(object sender, OrderGroupEventArgs e)
+        {
+            var orderGroup = OrderContext.Current.Get<OrderGroup>(e.OrderGroupId);
+            string currency = orderGroup.BillingCurrency;
         }
     }
 }
