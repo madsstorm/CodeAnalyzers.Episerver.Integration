@@ -66,6 +66,9 @@
     <Reference Include="EPiServer, Version=11.13.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>packages\EPiServer.CMS.Core.11.13.1\lib\net461\EPiServer.dll</HintPath>
     </Reference>
+    <Reference Include="EPiServer.AddOns.Helpers, Version=0.4.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.AddOns.Helpers.0.4.0.0\lib\EPiServer.AddOns.Helpers.dll</HintPath>
+    </Reference>
     <Reference Include="EPiServer.ApplicationModules, Version=11.13.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>packages\EPiServer.Framework.11.13.1\lib\net461\EPiServer.ApplicationModules.dll</HintPath>
     </Reference>
@@ -111,6 +114,15 @@
     <Reference Include="EPiServer.Events, Version=11.13.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>packages\EPiServer.Framework.11.13.1\lib\net461\EPiServer.Events.dll</HintPath>
     </Reference>
+    <Reference Include="EPiServer.Forms, Version=4.27.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.Forms.4.27.0\lib\EPiServer.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Forms.Core, Version=4.27.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.Forms.Core.4.27.0\lib\EPiServer.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Forms.UI, Version=4.27.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+      <HintPath>packages\EPiServer.Forms.UI.4.27.0\lib\EPiServer.Forms.UI.dll</HintPath>
+    </Reference>
     <Reference Include="EPiServer.Framework, Version=11.13.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>packages\EPiServer.Framework.11.13.1\lib\net461\EPiServer.Framework.dll</HintPath>
     </Reference>
@@ -146,6 +158,9 @@
     </Reference>
     <Reference Include="Geta.Epi.FontThumbnail, Version=1.1.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Geta.Epi.FontThumbnail.1.1.5\lib\net461\Geta.Epi.FontThumbnail.dll</HintPath>
+    </Reference>
+    <Reference Include="Geta.EpiCategories, Version=1.2.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Geta.EpiCategories.1.2.9\lib\net461\Geta.EpiCategories.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <HintPath>packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
@@ -335,6 +350,9 @@
     <Compile Include="Models\Blocks\DefaultBlock.cs" />
     <Compile Include="Models\Blocks\StandardBlock.cs" />
     <Compile Include="Models\CatalogContent\DefaultBundle.cs" />
+    <Compile Include="Models\Categories\BasicCategory.cs" />
+    <Compile Include="Models\Forms\EPiFormWithTwoColumnOptionBlock.cs" />
+    <Compile Include="Models\Forms\MyCustomElementBlock.cs" />
     <Compile Include="Models\Marketing\DefaultSalesCampaign.cs" />
     <Compile Include="Models\Media\DefaultImage.cs" />
     <Compile Include="Models\Media\DefaultMedia.cs" />
@@ -368,6 +386,7 @@
   <ItemGroup>
     <Content Include="Business\Criterion\DefaultCriterion.js" />
     <Content Include="Business\Criterion\Views\Shared\EditorTemplates\DefaultCriterionModel.ascx" />
+    <Content Include="lang\geta.epicategories.xml" />
     <Content Include="Plugins\AdminPlugin.aspx" />
     <Content Include="Static\gfx\page-type-thumbnail.png" />
     <Content Include="Views\Web.config" />
@@ -400,6 +419,12 @@
     <Content Include="modules\_protected\EPiServer.Commerce.Shell\EPiServer.Commerce.Shell.zip" />
     <Content Include="modules\_protected\Commerce\Commerce.zip" />
     <Content Include="modules\_protected\EPiServer.Commerce.UI.CustomerService\EPiServer.Commerce.UI.CustomerService.zip" />
+    <Content Include="modules\_protected\EPiServer.Forms.UI\module.config" />
+    <Content Include="modules\_protected\EPiServer.Forms.UI\EPiServer.Forms.UI.zip" />
+    <Content Include="modules\_protected\EPiServer.Forms\Views\ElementBlocks\Web.config" />
+    <Content Include="modules\_protected\EPiServer.Forms\Forms.config" />
+    <Content Include="modules\_protected\EPiServer.Forms\EPiServer.Forms.zip" />
+    <Content Include="modules\_protected\geta-epicategories\geta-epicategories.zip" />
     <None Include="packages.config" />
     <Content Include="Views\DefaultPage.cshtml" />
     <Content Include="Views\DefaultBlock.cshtml" />
