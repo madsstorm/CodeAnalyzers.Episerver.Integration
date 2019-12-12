@@ -436,7 +436,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Analyzer Include="packages\CodeAnalyzers.Episerver.1.1.0\analyzers\dotnet\cs\CodeAnalyzers.Episerver.dll" />
+    <Analyzer Include="packages\CodeAnalyzers.Episerver.1.2.0\analyzers\dotnet\cs\CodeAnalyzers.Episerver.dll" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
