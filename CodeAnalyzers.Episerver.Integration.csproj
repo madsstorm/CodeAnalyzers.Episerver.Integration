@@ -362,6 +362,7 @@
     <Compile Include="Models\CatalogContent\DefaultPackage.cs" />
     <Compile Include="Models\Pages\ArticlePage.cs" />
     <Compile Include="Models\Pages\DefaultPage.cs" />
+    <Compile Include="Models\Pages\ISettingsContent.cs" />
     <Compile Include="Models\Pages\PageBase.cs" />
     <Compile Include="Models\Pages\StartPage.cs" />
     <Compile Include="Models\CatalogContent\DefaultProduct.cs" />
@@ -436,7 +437,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Analyzer Include="packages\CodeAnalyzers.Episerver.1.2.0\analyzers\dotnet\cs\CodeAnalyzers.Episerver.dll" />
+    <Analyzer Include="packages\CodeAnalyzers.Episerver.1.2.1\analyzers\dotnet\cs\CodeAnalyzers.Episerver.dll" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>

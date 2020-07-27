@@ -20,5 +20,7 @@ namespace CodeAnalyzers.Episerver.Integration.Models.Blocks
             GroupName = SystemTabNames.Content,
             Order = 1)]
         public virtual string Name { get; set; }
+       
+        public ContentReference SomethingInternal { get; set; }
     }
 }

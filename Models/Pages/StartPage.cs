@@ -65,5 +65,13 @@ namespace CodeAnalyzers.Episerver.Integration.Models.Pages
             Order = 40,
             Prompt = "start time prompt")]
         public virtual DateTime StartTime { get; set; }
+
+        [CultureSpecific]
+        [Display(
+           Name = "Settings",
+            Description = "Link to Settings page",
+            GroupName = "Settings",
+            Order = 50)]
+        public virtual ContentReference Settings { get; set; }
     }
 }
